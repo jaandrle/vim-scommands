@@ -2,7 +2,7 @@
 
 The idea of this plugin is to groups your commands via prefixes (e.g. 'SOMETHING\*')
 and key maps just prefill this text and shows all options (infact native Vim `<tab>`
-competitions).
+competitions). Also use `shs` for showing `:map s<cr>`.
 
 ```
 SOMETHINGcmd1   SOMETHINGcmd2   SOMETHINGcmd3   SOMETHINGcmd4

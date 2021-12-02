@@ -36,6 +36,7 @@ support:
     call scommands#map('p', 'CtrlP', 'n')
     " now use: `sp`
 ```
+…last function argument stands for mode (comma separated string containing **n**ormal, **v**visual)
 
 ## TODO
 - [ ] better README

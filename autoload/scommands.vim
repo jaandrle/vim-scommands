@@ -18,10 +18,11 @@ nmap shs :map s<cr>
 
 function scommands#map(letter, namespace, types)
     for type in split(a:types, ',')
-        let cmd= 'v'==tolower(type) ? ':<c-u>' : ':'
+        let type_l= tolower(type)
+        let cmd= 'v'==type_l ? ':<c-u>' : ':'
         let cmd_final= 'V'==type ? 'gv:' : ':'
-        execute type."map s".a:letter." ".cmd."call feedkeys('".cmd_final.a:namespace."<tab>', 'tn')<cr>"
-        execute type."map S".a:letter." q:?^".a:namespace."<cr><cr>"
+        execute type_l."map s".a:letter." ".cmd."call feedkeys('".cmd_final.a:namespace."<tab>', 'tn')<cr>"
+        execute type_l."map S".a:letter." q:?^".a:namespace."<cr><cr>"
     endfor
 endfunction
 

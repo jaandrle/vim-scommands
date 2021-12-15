@@ -19,7 +19,7 @@ support:
 
     mkdir -p ~/.vim/bundle/vim-scommands
     cd ~/.vim/bundle/vim-scommands
-    git clone https://github.com/jaandrle/vim-scommands.git
+    git clone -b main --single-branch https://github.com/jaandrle/vim-scommands.git --depth 1
 
 …also dont't forget adjust wildmmenu (see `:help wildmmenu`), for example:
 

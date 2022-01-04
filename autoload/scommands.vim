@@ -14,8 +14,6 @@ vmap s <nop>
 nmap S <nop>
 vmap S <nop>
 
-nmap shs :map s<cr>
-
 function scommands#map(letter, namespace, types)
     for type in split(a:types, ',')
         let type_l= tolower(type)
